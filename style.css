@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:rgb(125, 190, 190);
+    padding: 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color:aliceblue;
+}
+
+#nav-logo-container{
+    display:flex;
+    align-items:center;
+    width: 80%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+li{
+    /* padding: 42px 24px; */
+    width:124px;
+    height:40px;
+    margin: 0px 12px;
+
+    /* ._____________________________________________________. */
+
+    background-image: url("./images/donut_link.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* ._____________________________________________________. */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+    position:relative;
+    transition: all 0.42s;
+}
+
+li:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+li::before {
+    content: "";
+    width: 90%;
+    height:50%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -42%;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    transition: all 0.42s;
+}
+
+li:hover::before{
+    opacity: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 24px;
+}
+
+#nav-logo{
+    width: 124px;
+    transition: all 0.42s;
+}
+
+#nav-logo:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+#heroCTA{
+    background-color:rgb(251, 157, 171);
+    padding: 16px;
+}
+
+#heroCTA p{
+    /* width:fit-content; uneeded because text align center */
+    margin:auto;
+    font-size: 18px;
+    color:aliceblue;
+    font-weight: bold;
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+    text-align: center;
+}
+
+#heroCTA a{
+    color:aliceblue;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.595);
+}
+
+#donut-banner{
+    background-color: yellow;
+    background-image: url("./images/DonutDozen2.webp");
+    opacity: 0.95;
+    height: 42vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px -8px 16px rgba(0, 0, 0, 0.8) inset,
+    -8px 8px 16px rgba(0, 0, 0, 0.8) inset;
+}
+
+#donut-banner h1{
+    font-size: 4em;
+    text-align:center;
+    color:aliceblue;
+    text-shadow: 2px 2px 2px #ff5f5fee;
+
+}
+
+#aboutus{
+    display: flex;
+    justify-content: space-between;
+    padding: 64px;
+    background-color:rgb(251, 157, 171);
+}
+
+.info{
+    width: 30%;
+    background-color:rgb(125, 190, 190);
+    /* border: 2px solid green; */
+    padding: 2px;
+    color:aliceblue;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5)
+
+}
+
+.info img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.info h1{
+    line-height: 28px;
+}
+
+.info *{
+    margin-bottom: 24px;
+}
+
+.info p {
+    font-size:18px;
+    font-weight: 600;
+}
